@@ -1,0 +1,186 @@
+.dashboard {
+    width: 100%;
+    display: flex;
+}
+
+.dashboard-body {
+    margin-top: -55%;
+}
+
+.dashboard-text p {
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.schedule-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-date p  {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.schedule-date .list-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50px;
+    background: #F8F9FB;
+}
+
+.schedule-date p {
+    text-align: center;
+}
+
+.list-option .List {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 8px 35px 8px 35px;
+    color: #437EF7;
+    font-size: 12px;
+}
+
+.list-option .list {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 600;
+}
+
+.list-option .Board {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.list-option .board {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.to-do p {
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.task-1 {
+    margin: 0 0 25px 100px;
+    border-left: 4px solid #E2341D;
+    border-bottom: 1px solid #DAE0E6;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0 0 8px 8px;
+}
+
+.task-2 {
+    margin: 0 0 25px 100px;
+    border-left: 4px solid #D78100;
+    border-bottom: 1px solid #DAE0E6;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0 0 8px 8px;
+}
+
+.task-3 {
+    margin: 0 0 25px 100px;
+    border-left: 4px solid #3971E7;
+    border-bottom: 1px solid #DAE0E6;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0 0 8px 8px;
+}
+
+.task-name {
+    display: flex;
+    align-items: center;
+}
+
+.task-name img {
+    width: 15px;
+    height: 15px;
+    padding-right: 8px;
+}
+
+.task-name p {
+    font-weight: 600;
+    color: #5F6D7E;
+
+}
+
+p {
+    padding-top: 0;
+    line-height: 0;
+    font-size: 12px;
+
+}
+
+.task-text p {
+    padding-left: 25px;
+    color: #5F6D7E;
+    font-weight: 400;
+}
+
+.schedule {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #5F6D7E;
+}
+
+.schedule .date  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+    border: 1px solid #DAE0E6;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.schedule .urgent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #DAE0E6;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.addTask  {
+    padding-left: 100px;
+}
+
+.addTask button {
+    background: #FFFFFF;
+    outline: none;
+    border: 1px solid #DAE0E6;
+    padding: 5px 8px;
+    font-weight: 200;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 375px) {
+  
+}

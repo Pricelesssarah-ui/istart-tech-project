@@ -1,0 +1,154 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container-item-1 {
+    width: 50%;
+    display: block;
+}
+
+.container-item-1 h1 {
+   position: relative;
+   width: 80%;
+   font-size: 38px;
+   padding: 20px 0 0 80px;
+}
+
+.container-item-1 img {
+    width: 50%;
+    height: 70vh;
+    margin-top: -100px;
+    object-fit: cover;
+    position: absolute; 
+}
+
+.container-item-2 {
+    width: 30%;
+    height: 90vh;
+    background: #ffffff;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.container-item-2 h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container-item-2 .sign-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 50px;
+    background: #F8F9FB;
+}
+
+.sign-option .sign-in {
+    background: #ffffff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 8px 50px 8px 50px;
+    color: #437EF7;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sign-option .signUp {
+    margin: auto;
+}
+
+.sign-option .sign-up {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.container-item-2 .sign-form {
+    width: 72%;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DAE0E6;
+}
+
+.sign-form button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #272D37;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container-item-2 form {
+   margin: 0 55px;
+   font-size: 12px;
+   font-weight: 500;
+   width: 70%;
+  
+}
+
+form input {
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #DAE0E6;
+    border: 1px solid #DAE0E6;
+}
+
+form .check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form .check .log-pwd p {
+    margin-right: 10px;
+}
+
+form .check .fpwd {
+    color: #437EF7;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container-item-1 {
+        display: none;
+    }
+
+    .container-item-2 {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .container-item-2 h1 {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+  
+}
