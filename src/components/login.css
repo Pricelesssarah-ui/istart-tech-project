@@ -1,3 +1,4 @@
+/*Section 1*/
 .container-login {
     width: 100%;
     height: 100vh;
@@ -26,6 +27,7 @@
     object-fit: contain;
 }
 
+/*Section 2*/
 .container-item2 {
     width: 30%;
     height: 90vh;
@@ -78,6 +80,7 @@
     cursor: pointer;
 }
 
+/*Google sign in styling*/
 .container-item2 .sign-form {
     width: 72%;
     height: 30px;
@@ -103,12 +106,12 @@ a {
     font-weight: 600;
 }
 
+/*Form*/
 .container-item2 .form {
    margin: 0 55px;
    font-size: 12px;
    font-weight: 500;
    width: 70%;
-  
 }
 
 .form .input-type {
@@ -137,6 +140,7 @@ a {
 
 .form .password {
     border: none;
+    outline: none;
     font-size: 12px;
 }
 
@@ -158,8 +162,7 @@ a {
 
 
 
-
-
+/*Mobile Responsiveness*/
 @media (max-width: 700px) {
     .container-item1 {
         display: none;

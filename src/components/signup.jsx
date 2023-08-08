@@ -9,12 +9,14 @@ import Password from "../assets/password.png";
 function Signup() {
     return(
         <div className="container-signup">
+            {/*section 1 */}
             <div className="container-item1">
                 <h1>Organize your workflow, boost your productivity</h1>
                 <img src={Loginpage} alt="loginpage" />
             </div>
-
+            {/*section 2 */}
             <div className="container-item2">
+                {/*The signin and signup options */}
                 <h1>Brand Logo</h1>
 
                 <div className="sign-option">
@@ -26,32 +28,35 @@ function Signup() {
                         <button className="sign-up"> <a href="/signup">Sign up</a></button>
                     </div>
                 </div>
-
+                {/*Google logo signin*/}
                 <div className="sign-form">
                     <img src={Google} alt="" />
                     <button>Sign in with Google</button>
                 </div>
-
+                {/*Form*/}
                 <div className="form-signin">
-                    <form action="">
-                        <div>
+                    <div className="form">
+                        {/*Fullname Form*/}
+                        <div className="email-input">
                             <p>Full Name</p>
                             <input 
                                 type="text" 
                                 placeholder="John Doe" 
+                                className="input input-type"
                                 required
                             />
                         </div>
-                        
+                        {/*Email Form*/}
                         <div className="email-input">
                             <p>Email</p>
                             <input 
                                 type="text" 
                                 placeholder="John@example.com" 
+                                className="input input-type"
                                 required
                             />
                         </div>
-
+                        {/*Password Form*/}
                         <div>
                             <p>Password</p>
                             <div className="password-input">
@@ -64,14 +69,14 @@ function Signup() {
                                 <img src={Password} alt="password" />
                             </div>
                         </div>
-
+                        {/*Below the input field*/}
                         <div className="check">
                             <p>Must be at least 8 characters</p>
                         </div> 
-                    </form>
+                    </div>
                 </div>
-
-                <a href="/"><Button text="Create account" /></a> 
+                {/*Create Account Button*/}
+                <a href="/dashboard"><Button text="Create account" /></a> 
             </div>
         </div>
     )

@@ -16,6 +16,7 @@ import Flag from "../assets/flag-1.png";
 function Dashboard() {
     return(
         <div className="container-dashboard">
+            {/*section of the dashboard*/}
             <div className="dashboard">
                 <div >
                     <Sidebar />
@@ -25,10 +26,11 @@ function Dashboard() {
                     <Navbar />
 
                     <div className="dashboard-body">
+                         {/*overview of the dashboard*/}
                         <div className="dashboard-text">
                             <p>Overview</p>
                         </div>
-
+                        {/*Date, List and the Board*/}
                         <div className="schedule-date">
                             <div>
                                 <p>August 1, 2023</p>
@@ -48,12 +50,12 @@ function Dashboard() {
                         </div>
                     </div>
 
-
+                    {/*Title --- Todo*/}
                     <div className="to-do">
                         <p>To-do</p>
                     </div>
 
-
+                    {/*the task-1*/}
                     <div className="task-1">
                         <div className="task-name">
                             <img src={Bullet1} alt="" />
@@ -77,7 +79,7 @@ function Dashboard() {
                         </div>
                     </div>
                     
-
+                    {/*the task-2*/}
                     <div className="task-2">
                         <div className="task-name">
                             <img src={Bullet2} alt="" />
@@ -101,7 +103,7 @@ function Dashboard() {
                         </div>
                     </div>
                     
-
+                    {/*the task-3*/}
                     <div className="task-3">
                         <div className="task-name">
                             <img src={Bullet3} alt="" />
@@ -125,7 +127,7 @@ function Dashboard() {
                         </div>
                     </div>
 
-
+                    {/*Add task Button*/}
                     <div className="addTask">
                         <button>+ Add new task</button>
                     </div>

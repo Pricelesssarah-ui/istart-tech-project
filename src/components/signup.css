@@ -1,3 +1,4 @@
+/*Section 1*/
 .container-signup {
     width: 100%;
     height: 100vh;
@@ -26,6 +27,7 @@
     object-fit: contain;
 }
 
+/*Section 1*/
 .container-item2 {
     width: 30%;
     height: 90vh;
@@ -76,6 +78,7 @@
     font-size: 12px;
 }
 
+/*Google sign in styling*/
 .container-item2 .sign-form {
     width: 72%;
     height: 30px;
@@ -101,12 +104,43 @@ a {
     font-weight: 600;
 }
 
+/*Form*/
 .container-item2 form {
    margin: 0 55px;
    font-size: 12px;
    font-weight: 500;
    width: 70%;
   
+}
+
+.form .input-type {
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #DAE0E6;
+}
+
+.form .input {
+    margin-bottom: 10px;
+}
+
+.form .password-input .email-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #DAE0E6;
+}
+
+.form .password {
+    border: none;
+    outline: none;
+    font-size: 12px;
 }
 
 form .email-input {
@@ -124,7 +158,7 @@ form input {
 
 
 
-
+/*Mobile Responsiveness*/
 @media (max-width: 700px) {
     .container-item1 {
         display: none;

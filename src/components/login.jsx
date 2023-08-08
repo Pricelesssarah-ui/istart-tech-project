@@ -9,14 +9,16 @@ import Password from "../assets/password.png";
 function Login() {
     return(
         <div className="container-login">
+            {/*section 1 */}
             <div className="container-item1">
                 <img src={Loginpage} alt="loginpage" />
                 <h1>Organize your workflow, boost your productivity</h1>
             </div>
 
+            {/*section 2 */}
             <div className="container-item2">
                 <h1>Brand Logo</h1>
-
+                {/*The signin and signup options */}
                 <div className="sign-option">
                     <div>
                         <button className="sign-in"> <a href="/login">Sign in</a></button>
@@ -26,14 +28,15 @@ function Login() {
                         <button className="sign-up"> <a href="/signup">Sign up</a></button>
                     </div>
                 </div>
-
+                {/*Google logo signin*/}
                 <div className="sign-form">
                     <img src={Google} alt="" />
                     <button>Sign in with Google</button>
                 </div>
-
+                {/*Form*/}
                 <div className="form-signin">
                     <div className="form">
+                        {/*Email Form*/}
                         <div>
                             <p>Email Address</p>
                             <input 
@@ -43,7 +46,7 @@ function Login() {
                                 required
                             />
                         </div>
-                        
+                        {/*Password Form*/}
                         <div>
                             <p>Password</p>
                             <div className="password-input">
@@ -56,7 +59,7 @@ function Login() {
                                 <img src={Password} alt="password" />
                             </div>
                         </div>
-
+                        {/*Below the input field*/}
                         <div className="check">
                             <div>
                                 <input 
@@ -72,12 +75,11 @@ function Login() {
                            <div>
                             <p className="fpwd">Forget password?</p>
                            </div>
-                           
                         </div> 
                     </div>
                 </div>
-
-                <a href="/"><Button text="Sign in"  /></a>
+                {/*Sign in Button*/}
+                <a href="/dashboard"><Button text="Sign in"  /></a>
         
             </div>
         </div>
