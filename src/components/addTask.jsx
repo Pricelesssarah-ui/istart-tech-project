@@ -28,7 +28,7 @@ function Dashboard() {
                         <div className="dashboard-text">
                             <p>Overview</p>
                         </div>
-
+                        
                         <div className="schedule-date">
                             <div>
                                 <p>August 1, 2023</p>

@@ -1,5 +1,5 @@
 .btn {
-    width: 68%;
+    width: 73%;
     margin: 20px 55px 0 55px;
     background: #437EF7;
     color: #ffffff;
@@ -9,9 +9,11 @@
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .btn:hover {
-    background: #F3F9FE;
+    background: #e9f4fe;
     color: #437EF7;
 }

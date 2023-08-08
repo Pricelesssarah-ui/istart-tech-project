@@ -1,36 +1,32 @@
 .container-signup {
     width: 100%;
     height: 100vh;
-    z-index: -1;
     background: #FAFBFC;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
-.container-item-1 {
+.container-item1 {
     width: 50%;
     display: block;
 }
 
-.container-item-1 h1 {
-   position: relative;
-   width: 80%;
-   font-size: 38px;
-   padding: 20px 0 0 80px;
-}
-
-.container-item-1 img {
-    width: 50%;
-    height: 80vh;
-    margin-top: -100px;
-    object-fit: contain;
+.container-item1 h1 {
+    top: 0;
     position: absolute;
-    z-index: -1;
-    
+    width: 35%;
+    font-size: 35px;
+    padding: 0 0 0 25px;
+    line-height: 1;
 }
 
-.container-item-2 {
+.container-item1 img {
+    width: 100%;
+    height: 88vh;
+    object-fit: contain;
+}
+
+.container-item2 {
     width: 30%;
     height: 90vh;
     background: #ffffff;
@@ -38,14 +34,14 @@
     border-radius: 50px;
 }
 
-.container-item-2 h1 {
+.container-item2 h1 {
     text-align: center;
     padding-top: 20px;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.container-item-2 .sign-option {
+.container-item2 .sign-option {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,7 +76,7 @@
     font-size: 12px;
 }
 
-.container-item-2 .sign-form {
+.container-item2 .sign-form {
     width: 72%;
     height: 30px;
     margin: 20px auto;
@@ -89,6 +85,11 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #DAE0E6;
+}
+
+a {
+    text-decoration: none;
+
 }
 
 .sign-form button {
@@ -100,7 +101,7 @@
     font-weight: 600;
 }
 
-.container-item-2 form {
+.container-item2 form {
    margin: 0 55px;
    font-size: 12px;
    font-weight: 500;
@@ -109,7 +110,7 @@
 }
 
 form .email-input {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 form input {
@@ -117,30 +118,26 @@ form input {
     padding: 8px 5px;
     font-size: 12px;
     border-radius: 5px;
-    color: #DAE0E6;
     border: 1px solid #DAE0E6;
-    cursor: copy;
+    outline: none;
 }
 
 
 
 
-
-
-
-@media (max-width: 1200px) {
-    .container-item-1 {
+@media (max-width: 700px) {
+    .container-item1 {
         display: none;
     }
 
-    .container-item-2 {
+    .container-item2 {
         width: 100%;
         height: 100vh;
         margin: 0;
         border-radius: 0;
     }
     
-    .container-item-2 h1 {
+    .container-item2 h1 {
         padding-top: 30px;
         margin-bottom: 20px;
     }

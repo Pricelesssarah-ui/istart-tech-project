@@ -3,26 +3,27 @@ import "./login.css";
 import Loginpage from "../assets/Group.png";
 import Google from "../assets/Logo.png";
 import Button from "./Button/button";
+import Password from "../assets/password.png";
 
 
 function Login() {
     return(
         <div className="container-login">
-            <div className="container-item-1">
-                <h1>Organize your workflow, boost your productivity</h1>
+            <div className="container-item1">
                 <img src={Loginpage} alt="loginpage" />
+                <h1>Organize your workflow, boost your productivity</h1>
             </div>
-            
-            <div className="container-item-2">
+
+            <div className="container-item2">
                 <h1>Brand Logo</h1>
 
                 <div className="sign-option">
                     <div>
-                        <button className="sign-in">Sign in</button>
+                        <button className="sign-in"> <a href="/login">Sign in</a></button>
                     </div>
 
                     <div className="signUp">
-                        <button className="sign-up">Sign up</button>
+                        <button className="sign-up"> <a href="/signup">Sign up</a></button>
                     </div>
                 </div>
 
@@ -36,18 +37,24 @@ function Login() {
                         <div>
                             <p>Email Address</p>
                             <input 
-                                type="text" 
+                                type="email" 
                                 placeholder="insert your email" 
-                                className="input"
+                                className="input input-type"
+                                required
                             />
                         </div>
                         
                         <div>
                             <p>Password</p>
-                            <input 
-                                type="password" 
-                                placeholder="insert your password"
-                            />
+                            <div className="password-input">
+                                <input 
+                                    type="password" 
+                                    placeholder="insert your password"
+                                    className="password"
+                                    required
+                                />
+                                <img src={Password} alt="password" />
+                            </div>
                         </div>
 
                         <div className="check">
@@ -70,7 +77,7 @@ function Login() {
                     </div>
                 </div>
 
-                <Button text="Sign in" />
+                <a href="/"><Button text="Sign in"  /></a>
         
             </div>
         </div>
