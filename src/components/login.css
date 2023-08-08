@@ -1,4 +1,4 @@
-.container {
+.container-login {
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -22,10 +22,11 @@
 
 .container-item-1 img {
     width: 50%;
-    height: 70vh;
+    height: 80vh;
     margin-top: -100px;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute; 
+    z-index: -1;
 }
 
 .container-item-2 {
@@ -46,13 +47,13 @@
 .container-item-2 .sign-option {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 70%;
     height: 30px;
     margin: auto;
     padding: 5px;
     border-radius: 50px;
     background: #F8F9FB;
+    justify-content: space-between;
 }
 
 .sign-option .sign-in {
@@ -98,7 +99,7 @@
     font-weight: 600;
 }
 
-.container-item-2 form {
+.container-item-2 .form {
    margin: 0 55px;
    font-size: 12px;
    font-weight: 500;
@@ -106,7 +107,7 @@
   
 }
 
-form input {
+.form input {
     width: 100%;
     padding: 8px 5px;
     font-size: 12px;
@@ -115,18 +116,23 @@ form input {
     border: 1px solid #DAE0E6;
 }
 
-form .check {
+.form .input {
+    margin-bottom: 10px;
+}
+
+.form .check {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding-top: 10px;
 }
 
-form .check .log-pwd p {
+.form .check .log-pwd p {
     margin-right: 10px;
 }
 
-form .check .fpwd {
+.form .check .fpwd {
     color: #437EF7;
 }
 

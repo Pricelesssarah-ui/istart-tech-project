@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Search from "../../assets/search.png";
 import Notify  from "../../assets/notification.png";
@@ -8,6 +8,22 @@ import Profile from "../../assets/profile.png";
 
 
 function Navbar() {
+
+    const [theme, setTheme] = useState(false);
+
+    const handleClick = () => {
+        setTheme(!theme)
+    }
+
+    useEffect(() => {
+        if(theme === true){
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    })
+
+
     return(
         <div className="navigation">
                 <div className="navbar">
@@ -27,7 +43,7 @@ function Navbar() {
                             <img src={Notify} alt="notify" />
                         </div>
 
-                        <div className="profileIcon-moon">
+                        <div className="profileIcon-moon" onClick={handleClick}>
                             <img src={Moon} alt="moon" />
                         </div>
 

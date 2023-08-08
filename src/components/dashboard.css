@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+.list-option  {
+    cursor: pointer;
+}
+
 .list-option .List {
     display: flex;
     align-items: center;
@@ -121,7 +125,6 @@
 .task-name p {
     font-weight: 600;
     color: #5F6D7E;
-
 }
 
 p {
@@ -144,6 +147,7 @@ p {
     padding-left: 25px;
     font-weight: 500;
     color: #5F6D7E;
+    cursor: pointer;
 }
 
 .schedule .date  {
@@ -167,6 +171,7 @@ p {
 
 .addTask  {
     padding-left: 100px;
+    cursor: pointer;
 }
 
 .addTask button {
@@ -177,6 +182,7 @@ p {
     font-weight: 200;
     font-size: 12px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 

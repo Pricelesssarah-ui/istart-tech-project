@@ -8,4 +8,10 @@
     font-size: 12px;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #F3F9FE;
+    color: #437EF7;
 }

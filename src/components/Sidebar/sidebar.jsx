@@ -12,7 +12,7 @@ import Team from "../../assets/team.png";
 
 function Sidebar() {
     return(
-        <div className="container">
+        <div className="container-sidebar">
             <div className="sidebar">
                 <div className="top-sidebar">
                     <p>Brand Logo</p>

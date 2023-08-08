@@ -7,12 +7,12 @@ import Button from "./Button/button";
 
 function Login() {
     return(
-        <div className="container">
+        <div className="container-login">
             <div className="container-item-1">
                 <h1>Organize your workflow, boost your productivity</h1>
                 <img src={Loginpage} alt="loginpage" />
             </div>
-
+            
             <div className="container-item-2">
                 <h1>Brand Logo</h1>
 
@@ -32,18 +32,23 @@ function Login() {
                 </div>
 
                 <div className="form-signin">
-                    <form action="">
-                        <p>Email Address</p>
-                        <input 
-                            type="text" 
-                            placeholder="insert your email" 
-                        />
+                    <div className="form">
+                        <div>
+                            <p>Email Address</p>
+                            <input 
+                                type="text" 
+                                placeholder="insert your email" 
+                                className="input"
+                            />
+                        </div>
                         
-                        <p>Password</p>
-                        <input 
-                            type="password" 
-                            placeholder="insert your password" 
-                        />
+                        <div>
+                            <p>Password</p>
+                            <input 
+                                type="password" 
+                                placeholder="insert your password"
+                            />
+                        </div>
 
                         <div className="check">
                             <div>
@@ -62,10 +67,11 @@ function Login() {
                            </div>
                            
                         </div> 
-                    </form>
+                    </div>
                 </div>
 
                 <Button text="Sign in" />
+        
             </div>
         </div>
     )

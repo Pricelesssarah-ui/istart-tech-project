@@ -1,5 +1,5 @@
 import React from "react";
-import "./dashboard.css";
+import "./addTask.css";
 import Sidebar from "./Sidebar/sidebar";
 import Navbar from "./Navbar/navbar";
 import Board from "../assets/board.png";
@@ -15,10 +15,10 @@ import Flag from "../assets/flag-1.png";
 
 function Dashboard() {
     return(
-        <div className="container-dashboard">
+        <div className="container-dashboard" id="addtoTask">
             <div className="dashboard">
-                <div >
-                    <Sidebar />
+                <div>
+                    <Sidebar className="sidebar" />
                 </div>
 
                 <div>
@@ -129,6 +129,20 @@ function Dashboard() {
                     <div className="addTask">
                         <button>+ Add new task</button>
                     </div>
+                    
+
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
                 </div>

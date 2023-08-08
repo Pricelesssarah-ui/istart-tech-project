@@ -1,4 +1,4 @@
-.container {
+.container-sidebar {
     display: flex;
     width: 250px;
     height: 100vh;
@@ -29,6 +29,10 @@
 
 .sidebar-container h4 {
     padding-left: 20px;
+}
+
+.menu-container {
+    cursor: pointer;
 }
 
 .menu-container .active-bar {
